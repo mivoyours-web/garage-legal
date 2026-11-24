@@ -24,10 +24,10 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">Passbook app · effective 15 November 2026</p>
+<p class="sub">Passbook app · effective 24 November 2026</p>
 
 <h2>In short</h2>
-<p><strong>We do not collect your data.</strong> Passbook has no server. Everything
+<p><strong>We do not collect your data.</strong> Passbook has no developer server. Everything
 you enter about your cars — records, deadlines, photos, documents, costs and
 optional locations — stays on your device and, if you use iCloud, in
 <em>your own</em> iCloud account. The developer has no access to it and receives
@@ -46,7 +46,23 @@ optional place names and coordinates on service records or fill-ups.</p>
       <strong>your</strong> iCloud account, via Apple's CloudKit. Syncing happens
       between your own devices.</li>
 </ul>
-<p>The app does not transmit this data to the developer or to any third party.</p>
+<p>The app does not transmit your personal data to the developer or to any
+advertising or analytics third party.</p>
+
+<h2>Optional third-party public lookups</h2>
+<ul>
+  <li><strong>VIN decoding &amp; U.S. Safety Recalls (NHTSA)</strong> — only when
+      you explicitly choose to decode a VIN or check Safety Recalls, Passbook
+      queries the public U.S. National Highway Traffic Safety Administration API
+      (<code>vpic.nhtsa.dot.gov</code> and <code>api.nhtsa.gov</code>) using the
+      VIN or your vehicle's make, model and year. No account, device identifier
+      or other personal record is included in those requests.</li>
+  <li><strong>Currency exchange rates (Frankfurter / ECB)</strong> — if you log
+      expenses in multiple currencies, Passbook refreshes anonymous daily
+      European Central Bank reference rates from
+      <code>api.frankfurter.app</code> at most once every 24 hours. No user or
+      vehicle information is ever sent.</li>
+</ul>
 
 <h2>Accounts</h2>
 <p>Passbook has no accounts. Nothing asks you to sign in, register or give an
@@ -62,8 +78,13 @@ is not involved and cannot see the shared data.</p>
 <ul>
   <li><strong>Photos</strong> — to attach a photo of a vehicle, invoice or
       document. Access is limited to what you select.</li>
-  <li><strong>Camera</strong> — to photograph fuel receipts, documents, policies
-      and invoices. Text and QR recognition happens on the device itself.</li>
+  <li><strong>Camera</strong> — to photograph fuel receipts, VIN plates,
+      documents, policies and invoices. Text, barcode and QR recognition happens
+      on the device itself.</li>
+  <li><strong>Calendar &amp; Reminders (optional)</strong> — requested only if
+      you turn on Apple Calendar or Apple Reminders sync in Settings. Passbook
+      writes and updates your car deadlines directly in your device's Calendar
+      or Reminders through Apple EventKit.</li>
   <li><strong>Location (optional, When In Use)</strong> — requested only if you
       explicitly tap <em>Use Current Location</em> on a service record or fuel
       fill-up. Passbook never tracks your location automatically or in the
@@ -84,9 +105,11 @@ is not involved and cannot see the shared data.</p>
 and builds no profile of you.</p>
 
 <h2>Subscription and payments</h2>
-<p>Passbook offers an optional subscription. Payment is handled entirely by Apple
-through the App Store. The developer never sees or stores card or payment
-details. One vehicle is free and fully functional without any subscription.</p>
+<p>Passbook offers optional Premium plans — a monthly or yearly subscription, or
+a one-time Lifetime purchase — as well as App Store Offer Codes. Payment is
+handled entirely by Apple through the App Store. The developer never sees or
+stores card or payment details. One vehicle is free and fully functional without
+any purchase.</p>
 <p>If a subscription ends, you keep access to everything you have already
 entered — your history remains readable, and your first vehicle continues to
 work in full.</p>
